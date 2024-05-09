@@ -15,7 +15,11 @@ config.default_prog = { "C:/Program Files/Git/bin/bash.exe" }
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
-config.font = wezterm.font("Monaspace Neon")
+-- config.font = wezterm.font("Monaspace Neon")
+config.font = wezterm.font{
+  family="Monaspace Neon",
+  harfbuzz_features={'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'}
+}
 config.font_size = 13
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
