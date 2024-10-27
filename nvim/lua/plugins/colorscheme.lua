@@ -37,15 +37,19 @@ return {
   -- },
   {
     "oxfist/night-owl.nvim",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     name = "night-owl",
   },
-  { "datsfilipe/vesper.nvim", opts = {
+
+  {
+    "datsfilipe/vesper.nvim",
     opts = {
-      transparent = true,
-    },
-  } },
+      opts = {
+        transparent = true,
+      },
+    }
+  },
 
   {
     "LazyVim/LazyVim",
