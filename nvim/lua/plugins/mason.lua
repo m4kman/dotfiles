@@ -8,7 +8,7 @@ return {
       "markdownlint",
       "marksman",
       "mdx-analyzer",
-      "prettier",
+      -- "prettier",
       "prettierd",
       "shfmt",
       "stylua",

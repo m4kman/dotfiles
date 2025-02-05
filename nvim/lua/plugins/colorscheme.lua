@@ -1,11 +1,8 @@
 return {
   -- {
-  --   "datsfilipe/vesper.nvim",
-  --   name = "vesper",
-  -- },
-  -- {
   --   "rebelot/kanagawa.nvim",
   -- },
+  --
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
@@ -37,24 +34,63 @@ return {
   -- },
   {
     "oxfist/night-owl.nvim",
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     name = "night-owl",
   },
 
   {
     "datsfilipe/vesper.nvim",
+  },
+
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+
+    -- Fix selection color
+    config = function()
+      local p = require("poimandres.palette")
+      require("poimandres").setup({
+
+        highlight_groups = {
+          LspReferenceText = { bg = p.background1 },
+          LspReferenceRead = { bg = p.background1 },
+          LspReferenceWrite = { bg = p.background1 },
+        },
+      })
+    end,
+  },
+
+  {
+    "tek256/simple-dark",
+  },
+  {
+    "slugbyte/lackluster.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+
+    "kdheepak/monochrome.nvim",
+  },
+  {
+    "m4kman/m4krome.nvim",
+  },
+  {
+    "p00f/alabaster.nvim",
+  },
+  {
+    "ramojus/mellifluous.nvim",
     opts = {
-      opts = {
-        transparent = true,
-      },
-    }
+      colorset = "kanagawa_dragon",
+    },
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vesper",
+      colorscheme = "mellifluous",
     },
   },
 }
