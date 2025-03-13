@@ -1,0 +1,18 @@
+font-family = "Dank Mono Regular"
+font-family-italic = "Dank Mono Italic"
+font-size = 13
+
+font-thicken = true
+
+# adjust-cell-height = 15%
+
+window-padding-y = 0
+window-padding-x = 0
+
+window-padding-balance = true
+
+background-opacity = 0.95
+
+macos-titlebar-style = hidden
+
+theme = vesper
