@@ -10,7 +10,7 @@ return {
     opts = function(_, opts)
       opts.transparent = true
       opts.italic_comments = true
-      opts.theme = {
+      opts.opts = {
         colors = {
           green = "#54e561",
         },
@@ -87,10 +87,50 @@ return {
     },
   },
 
+  -- {
+  --   "jwbaldwin/oscura.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     -- configuration options (see below)
+  --   },
+  -- },
+  --
+  --
+  {
+    dir = "~/.dev/nvim/oscura.nvim",
+    dev = true,
+    -- lazy = false,
+    -- priority = 1000,
+    -- opts = {
+    --   -- configuration options (see below)
+    -- },
+  },
+
+  {
+    dir = "~/.dev/nvim/monochrome",
+    dev = true,
+    -- lazy = false,
+    -- priority = 1000,
+    -- opts = {
+    --   -- configuration options (see below)
+    -- },
+  },
+
+  {
+    dir = "~/.dev/nvim/catpuccin",
+    dev = true,
+    -- lazy = false,
+    -- priority = 1000,
+    -- opts = {
+    --   -- configuration options (see below)
+    -- },
+  },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "mellifluous",
+      colorscheme = "oscura",
     },
   },
 }
