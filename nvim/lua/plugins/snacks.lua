@@ -5,7 +5,6 @@ return {
   opts = {
     dashboard = {
       enabled = true,
-      example = "advanced",
       preset = {
         header = [[
                                                                    
@@ -26,6 +25,5 @@ return {
     words = { enabled = true },
     zen = { enabled = true },
     scroll = { enabled = false },
-    -- picker = { enabled = true },
   },
 }

@@ -12,5 +12,5 @@ vim.filetype.add({
   },
 })
 vim.opt.wildignore:append({ "*/node_modules/*" })
--- vim.g.neovide_input_macos_alt_is_meta = true
-vim.g.lazyvim_eslint_auto_format = false
+
+vim.g.lazyvim_eslint_auto_format = true
