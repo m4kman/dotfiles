@@ -13,6 +13,7 @@ return {
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
+      css = { "prettierd" },
     },
   },
 }

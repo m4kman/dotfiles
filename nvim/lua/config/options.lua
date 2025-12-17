@@ -14,3 +14,5 @@ vim.filetype.add({
 vim.opt.wildignore:append({ "*/node_modules/*" })
 
 vim.g.lazyvim_eslint_auto_format = true
+
+vim.lsp.enable("copilot-ls")
